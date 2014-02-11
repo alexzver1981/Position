@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wait">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF9933</color>
+    <color name="blue">#3300FF</color>
+    <color name="beige">#FFFF99</color>
+    
+</resources>

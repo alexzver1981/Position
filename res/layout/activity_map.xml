@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nullText"
+        android:textColor="@color/wait" />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btBack"
+            style="@style/customButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:height="48dp"
+            android:onClick="onClickBack"
+            android:text="@string/reverse" />
+
+        <Button
+            android:id="@+id/btNext"
+            style="@style/customButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:height="48dp"
+            android:onClick="onClickNext"
+            android:text="@string/next" />
+
+    </LinearLayout>
+    
+    <ru.yandex.yandexmapkit.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="WUBautPIqIgBSUceE~4tOtjd9u2hIbgqia87e-dHRjK2ltFkZemTgGVUOkzCj-Nk5amA8~xAFOr~Q2uBnqxshf48oK0PT-gGH05iPYQUhOM=" />
+
+</LinearLayout>

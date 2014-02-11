@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="Настройки обновления GPS">
+        
+        <ListPreference android:dialogTitle="Обновлять через" 
+                        android:entries="@array/text_time" 
+                        android:entryValues="@array/value_time" 
+                        android:key="time_update" 
+                        android:title="Время обновления" 
+                        android:summary="Как часто получать данные со спутников"/>
+        
+        <ListPreference android:key="distanse_update" 
+                        android:title="Дистанция обновления" 
+                        android:summary="Частота обновления при передвижении " 
+                        android:entries="@array/text_distance" 
+                        android:entryValues="@array/value_distance" 
+                        android:dialogTitle="Обновлять через"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Получать данные с номера">
+        <EditTextPreference android:key="tel" android:summary="Номер телефона с которого получаем данные" android:title="Ввести номер"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Настройки баз данных">
+        <Preference android:layout="@layout/button_pref"/>
+        <Preference android:layout="@layout/button_abonent_pref"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Настройки включения">
+        <CheckBoxPreference android:title="Запускать при включени устройства" android:key="start"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Настройки отображения адреса">
+        <CheckBoxPreference android:key="adres" android:title="Показывать адреса"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

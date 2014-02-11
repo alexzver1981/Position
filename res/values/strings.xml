@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Position</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="startRecord">Начать слежение</string>
+    <string name="stopRecord">Остановить</string>
+    <string name="my_coordinats">Список моих координат</string>
+    <string name="nullText"></string>
+    <string name="another_coordinats">Список не моих координат </string>
+    <string name="settings">Настройки</string>
+    <string name="get_parametrs">Получить координаты</string>
+    <string name="OK">ОК</string>
+    <string name="clear_data_another_abonent">Очистить данные полученные от сторонних аппаратов</string>
+    <string name="clear_data_this_device">Очистить данные полученные от спутников на этом аппарате</string>
+    <string name="reverse">Предыдущая</string>
+    <string name="next">Следующая</string>
+    <string name="wait" tools:ignore="TypographyEllipsis">Идёт загрузка карты \n подождите...</string>
+    <string name="alert_dialog_message">Невозможно получить адрес \n отсутствует соединение с интернетом</string>
+
+</resources>
