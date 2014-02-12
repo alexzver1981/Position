@@ -89,6 +89,7 @@ int menu main 0x7f0a0000
 int string OK 0x7f05000f
 int string action_settings 0x7f050006
 int string alert_dialog_message 0x7f050015
+int string aletr_dialog_title 0x7f050016
 int string another_coordinats 0x7f05000c
 int string app_name 0x7f050005
 int string clear_data_another_abonent 0x7f050010

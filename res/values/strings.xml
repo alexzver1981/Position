@@ -16,7 +16,8 @@
     <string name="clear_data_this_device">Очистить данные полученные от спутников на этом аппарате</string>
     <string name="reverse">Предыдущая</string>
     <string name="next">Следующая</string>
-    <string name="wait" tools:ignore="TypographyEllipsis">Идёт загрузка карты \n подождите...</string>
-    <string name="alert_dialog_message">Невозможно получить адрес \n отсутствует соединение с интернетом</string>
+    <string name="wait" tools:ignore="TypographyEllipsis">Идёт загрузка адреса \n подождите...</string>
+    <string name="alert_dialog_message">воэможно отсутствует соединение с интернетом, \n \n или адреса нет в базе данных</string>
+    <string name="aletr_dialog_title">Невозможно получить адрес!</string>
 
 </resources>

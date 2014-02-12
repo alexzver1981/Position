@@ -104,31 +104,29 @@ public class MyMapActivity extends Activity {
 		   
 		if (adresIsChecked) {
 			
-			getAdresAndShowMap();		
+			getAdresAndShowMap(lat, lon);		
 		}
 		
 		else showMap();
 	}
 	
 	
-	private void getAdresAndShowMap () {
+	private void getAdresAndShowMap (double latitude, double longitude) {
 				
 		 final ProgressDialog progressDialog = new ProgressDialog(this);
 		 
-			new AsyncTask<Void, Void, String>() {
+			new AsyncTask<Double, Void, String>() {
 				
 				@Override
 				protected void onPreExecute() {
 				
-				//	adres = "";
-					
 				    progressDialog.setMessage(getResources().getString(R.string.wait));		 
 				    progressDialog.show();
 				}
 
 				
 				@Override
-				protected String doInBackground(Void... params) {
+				protected String doInBackground(Double... params) {
 					
 					Geocoder geocoder = new Geocoder(getApplicationContext());
 					
@@ -136,7 +134,7 @@ public class MyMapActivity extends Activity {
 					
 					try {
 						
-						List<Address> list = geocoder.getFromLocation(lat, lon, 1);
+						List<Address> list = geocoder.getFromLocation(params[0], params[1], 1);
 						
 						if (list.size() != 0) {
 							
@@ -167,7 +165,7 @@ public class MyMapActivity extends Activity {
 				    showMap();
 				   }
 				
-			}.execute();
+			}.execute(latitude, longitude);
 		
 	}
 	
@@ -183,6 +181,8 @@ public class MyMapActivity extends Activity {
 
 	    	AlertDialog.Builder builder = new AlertDialog.Builder(this);
 	    	
+	    	builder.setIcon(android.R.drawable.ic_dialog_info);
+	    	builder.setTitle(R.string.aletr_dialog_title);
 	    	builder.setMessage(R.string.alert_dialog_message);
 	    	builder.setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
 				

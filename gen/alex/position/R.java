@@ -122,6 +122,7 @@ public final class R {
         public static final int OK=0x7f05000f;
         public static final int action_settings=0x7f050006;
         public static final int alert_dialog_message=0x7f050015;
+        public static final int aletr_dialog_title=0x7f050016;
         public static final int another_coordinats=0x7f05000c;
         public static final int app_name=0x7f050005;
         public static final int clear_data_another_abonent=0x7f050010;
